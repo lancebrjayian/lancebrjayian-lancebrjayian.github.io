@@ -1,0 +1,18 @@
+.border-example {
+    width: 90%;
+    height: 470px;
+    border: 20px solid #007BFF;  /* Simple blue border */
+    border-image-source: url('pic2.jpeg');  /* Image border */
+    border-image-slice: 50;  /* Slice the image */
+    border-image-repeat: s;  /* Stretch to fit the border */
+    padding: 20px;}
+body { 
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right; 
+ background-size:100% 100% ;
+    margin: 0px;
+    
+}
+

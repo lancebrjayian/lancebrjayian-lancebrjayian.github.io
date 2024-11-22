@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<head>
+    <html>
+<title>page1</title>
+<style>
+        /* Container to give perspective to the 3D animation */
+        .scene {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            width: 48vh;
+            perspective: 1500px; /* Perspective to enhance the 3D effect */
+            background-color: lightgreen;
+        }
+
+        /* Cube container for 3D transformation */
+        .cube {
+            width: 0px;
+            height: 0px;
+            position: relative;
+            transform-style: preserve-3d; /* Maintain 3D transformation */
+            transform: rotateX(45deg) rotateY(45deg); /* Initial position */
+            animation: rotateCube 3s infinite linear; /* Animation for the 3D cube */
+        }
+
+        /* Style for each face of the cube */
+        .face {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-size: cover; /* Ensure the image covers the entire face */
+            background-position: center; /* Center the image */
+            border: 1px solid #fff;
+        }
+
+        /* Positioning each face of the cube with your images */
+        .front  { transform: translateZ(75px); background-image: url('pic1.jpg'); }
+        .back   { transform: rotateY(180deg) translateZ(75px); background-image: url('pic1.jpg'); }
+        .right  { transform: rotateY(90deg) translateZ(75px); background-image: url('pic1.jpg'); }
+        .left   { transform: rotateY(-90deg) translateZ(75px); background-image: url('pic1.jpg'); }
+        .top    { transform: rotateX(90deg) translateZ(75px); background-image: url('pic1.jpg'); }
+        .bottom { transform: rotateX(-90deg) translateZ(75px); background-image: url('pic1.jpg'); }
+
+        /* Keyframes for rotating the cube in 3D space */
+        @keyframes rotateCube {
+            0%   { transform: rotateX(0deg) rotateY(0deg); }
+            100% { transform: rotateX(360deg) rotateY(360deg); }
+        }
+  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: lightyellow;
+}
+
+.navbar a {
+  float: left;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  padding: 50px 30px;
+  text-decoration: none;
+  border: 2px solid black;  
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 40px;  
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border: none;  
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightgreen;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: BLACK;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: lightyellow;  
+}
+
+.dropdown-content a:hover {
+  background-color: lightgreen;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    
+        table {
+            width: 100%;
+        }
+        th, td {
+            border: px solid red; 
+            padding: 10px;
+        }
+        th {
+            background-color: #ffffc5;
+        }
+        td {
+            background-color: lightgreen;
+        }
+    .content {
+      padding: 20px;
+      background-color: #CBC3E3;
+      border-radius: 20px;
+      margin: 20px 0;
+      width: 100%;
+    }
+      .text-shadow { text-shadow: 4px 4px 1px rgba(1, 1, 1, 1); }
+    
+     .text-stroke {
+            color: green;
+            -webkit-text-stroke: 2px black ;}
+       .text-stroke2 {
+            color: black;
+            -webkit-text-stroke: 2px black ;}
+  
+          
+    @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; } }
+        .animated-text {
+            animation: fadeIn 2s ease-in; }
+    
+    .home {
+        padding: 20px;
+        background-color: lightgreen;
+        border-radius: 20px;
+        margin: 20px ;
+        width: 90%;
+    }
+     p.thick {
+         font-weight: bold;
+}
+    .border-radius-transition {
+            background-color: teal;
+            border-radius: 5px;
+        }
+        .border-radius-transition:hover {
+            border-radius: 50%;
+        }
+    .border-radius-transition {
+            background-color: teal;
+            border-radius: 5px;
+        }
+        .border-radius-transition:hover {
+            border-radius: 50%;
+        }
+    
+    
+.arrow {
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+}
+ 
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}   
+    
+    </style>
+</head>
+<head>
+    <link rel="stylesheet" href="dropbar.css">
+<body bgcolor="#ffffc5">
+    
+    
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">Enroll</a>
+  <div class="dropdown">
+    <button class="dropbtn"><p>Strand&nbsp&nbsp<i class="arrow down"></i></p>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="2.html">ICT AND EIM</a>
+      <a href="#">STEM</a>
+      <a href="#">HUMS</a>
+      <a href="#">GAS</a>
+    </div>
+  </div> 
+</div>
+
+
+  <center>
+<table border="10" bordercolor="#CE93D8">
+    <tr>
+        <td><img src="pic1.jpg" width="200" height="200"></td>
+        <td background="pic4.jpg"><font style="cursive" size="10" color="yellow"><b><p style="font-family:'Courier New'"><h4 class="text-shadow">STAND ALONE SENIOR HIGH SCHOOL</b></font></td>
+    </tr>
+    <tr>
+       
+</table>
+</body>
+            <br>
+            <br>
+            <br>
+    <font style="cursive" size="10" color="black"><p style="font-family:'Courier New'"><b class="animated-text">WELCOME TO STAND ALONE SENIOR HIGH SCHOOL WEBSITE</b></font></th>
+
+    <br>
+    <br>
+            <br>
+            <br>
+            <table border="0">
+                <th><section class="home">
+        <hr size="8" height="100%" width="100%" color="blue">
+            <font size="6"><p class="text-stroke" class="thick" style="font-family:'Courier New'">At Stand Alone Senior High School, we are dedicated to fostering Discipline, Integrity, and Excellence in every student. Our specialized programs, including HUMSS, STEM, Electrical Installation and Maintenance, and ICT, are designed to align with your interests and career goals.</font></p>
+                <center><video width="100%" height="500" loop="vid1.mp4" autoplay muted>
+  <source src="vid1.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg"></center>
+          <hr size="8" height="100%" width="100%" color="blue"></section>
+                </table>
+<head>     
+    <center><link rel="stylesheet" href="sakit.css"> <!-- Link to the CSS file -->           
+        <section class="content container2">
+  <div class="border-example"><font style="cursive" size="15" color="green"><b><p style="font-family:'Courier New'">-MISSION-</p></font></h1>
+      <p><font style="cursive" size="6">To protect and promote the right of every Filipino to quality, equitable, culture-based, and complete basic education where: Students learn in a child-friendly, gender-sensitive, safe, and motivating environment. Teachers facilitate learning and constantly nurture every learner. Administrators and staff, as stewards of the institution, ensure an enabling and supportive environment for effective learning to happen. Family, community, and other stakeholders are actively engaged and share responsibility for developing life-long learners.</p></font>
+  </div>
+  </center><br></section>
+      <link rel="stylesheet" href="sakit.css"> <!-- Link to the CSS file -->          
+  <center><section class="content container2">
+  <div class="border-example"><font style="cursive" size="15" color="green"><b><p style="font-family:'Courier New'">-VISION-</p></font></h1>
+      <p><font style="cursive" size="6">We dream of Filipinos who passionately love their country and whose values and competencies enable them to realize their full potential and contribute meaningfully to building the nation. As a learner-centered public institution, the Department of Education continuously improves itself to better serve its stakeholders.  </center><br>
+      </head>
+      <br>
+      <br>
+    <font style="cursive" size="15" color="green"><h2 class="text-stroke">-3D LOGO-</h2>
+    <table border="3" bordercolor="darkviolet">
+      <th>
+    <div class="scene">
+        <div class="cube">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+        </div>
+    </div></th>
+    </table>
+      <center><style>
+      a{
+          text-decoration: none;
+      }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: 90%;
+            max-width: 1000px;
+        }
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: 90%;
+            max-width: 1000px;
+            height: 530px
+        }
+        .container3 {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: 96%;
+            max-width: 1000px;
+            height: 530px
+        }
+       .content2 {
+         padding: 20px;
+         backgroundcolor: ;
+         border-radius: 20px;
+         margin: 20px 0;
+         width: 96%;
+    }
+        
+        .box {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color: black;
+            border: 2px solid transparent;
+            transition: all 0.5s ease;
+            border-radius: 20px;
+            font-family: 'Courier New';
+        }
+         .box2 {
+             width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color: black;
+            border: 2px solid transparent;
+            transition: all 0.5s ease;
+            border-radius: 20px;
+            font-family: 'Courier New';
+        }
+        .color-transition {
+            background-color: lightgreen;
+        }
+        .color-transition:hover {
+            background-color: #C3A0F0;
+        }
+
+        @media (max-width: 700px) {
+            .box {
+                height: 100px;
+                font-size: 5px;}
+            }
+        
+    </style>
+</head>
+      <body>
+          <font style="cursive" size="15" color="green"><h2 class="text-stroke">-EVENT-</h2>
+              <font size="7" color="black"><p class="text-stroke2" class="thick" style="font-family:'Courier New'">Enjoying and celebrating. The teachers' month celebration grew increasingly thrilling and exhilarating. We are grateful to our SSLG Officers for planning this kind of teacher-focused event. It was a straightforward but entertaining experience for our pupils. 
+
+pictures credit to SSLG
+              <table border="5" bordercolor="darkviolet">
+                  <td><center><img src="event1.jpg" width="420" height="300"></center></td>
+                  <td><center><img src="event2.jpg" width="420" height="300"></center></td>
+                  <tr>
+                      <td><center><img src="event3.jpg" width="420" height="290"></center></td>
+                      <td><center><img src="event4.jpg" width="420" height="290"></center></td>
+                      </tr>
+                  
+              </table>
+                  <br>
+                  <br>
+                  <font size="7" color="black"><p class="text-stroke2" class="thick" style="font-family:'Courier New'">We celebrate the National Women's Month and the International Women's Day with the theme “Lipunang Patas sa Bagong Pilipinas; Kakayahan ng Kababaihan, patutunayan!”
+
+With our special guest
+ Ma'am Victoria Landicho our Education Program Supervisor in ESP and Values Education and GAD Division Focal Person
+
+Ma'am Lorna Basagre
+GAD Focal Person
+#WomensMonth2024 
+
+                  <table border="5" bordercolor="darkviolet">
+                  <td><center><img src="event6.jpg" width="420" height="300"></center></th>
+                  <td><center><img src="event7.jpg" width="420" height="300"></center></th>
+                  
+                  
+              </table>
+      </body>
+      <body>
+          <font style="cursive" size="15" color="green"><h2 class="text-stroke">-STRANDS OFFERED-</h2></font>       
+    <div class="container">
+        <a href="2.html"><div class="box2 color-transition"><b>ICT (INFORMATION COMMUNICATION TECHNOLOGY) and EIM(ELECTRICAL INSTALLATION AND MAINTENANCE)</b></div></a>
+        <a href=""></a><div class="box color-transition"><b>GAS (GENERAL ACADEMIC STRAND)</b></div></a>
+        <a href=""><div class="box color-transition"><b>STEM (SCIENCE TECHNOLOGY ENGINEERING MATHEMATHICS)</b></div></a>
+        <a href=""></a><div class="box color-transition"><b>HUMSS (HUMANITIES AND SOCIAL SCIENCE)</b></div></a>
+    </div>
+                    <br>
+                    <br>
+                    <hr size="6" height="100%" width="100%" color="blue">
+                <table border="3" bordercolor="darkviolet">
+                  <font style="cursive" size="15" color="green"><h2 class="text-stroke">-CONTACT DETAILS-</h2></font>
+                  <th><b><font size="6" style="cursive" color="black">ADDRESS:</font></b></th>
+                  <th><font size="6" color="gray">Stand Alone School, G3GG+656, Liwayway Taguig 1637 Metro Manila</font><br></td></th>
+                <tr>
+                  <th><b><font size="6" style="cursive" color="black">EMAIL:</font></b></th>
+                  <th><font size="6" style="cursive" color="gray"><a href="">lancegianapas@gmail.com</a></font></th>
+                </tr>
+                <tr>
+                  <th><font size="6" style="cursive" color="black">Phone:</th></font>
+                  <th><font size="6" style="cursive" color="gray">700-49076</th></font>
+                </tr>
+                    <tr>
+                      <th><font size="6" style="cursive" color="black">OFFICE HOURS:</th>
+                        <th><font size="6" style="cursive" color="gray">Monday-Friday, 8:00AM-5:00PM</th>
+                    </tr>
+                  
+                </table>
+              </body>
+            <body>
+                <table>
+                  <th><img src="end.jpg" width="950" height="400"></th>
+</body>

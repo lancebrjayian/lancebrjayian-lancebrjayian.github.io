@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<head>
+    <html>
+<title>page5</title>
+  <style>
+  
+  .arrow {
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+}
+ 
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}   
+  
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: lightyellow;
+}
+
+.navbar a {
+  float: left;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  padding: 50px 30px;
+  text-decoration: none;
+  border: 2px solid black;  
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 40px;  
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border: none;  
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: lightgreen;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: BLACK;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: lightyellow;  
+}
+
+.dropdown-content a:hover {
+  background-color: lightgreen;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  font-size: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+    .button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+  
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+        table {
+            width: 100%;
+        }
+        th, td {
+            border: px solid red; 
+            padding: 10px;
+        }
+        th {
+            background-color: #ffffc5;
+        }
+        td {
+            background-color: #ffffc5;
+        }
+    .content {
+      padding: 20px;
+      background-color: #90EE90;
+      border-radius: 20px;
+      margin: 20px 0;
+      width: 100%;
+    }
+      .text-shadow { text-shadow: 4px 4px 1px rgba(1, 1, 1, 1); }
+    
+     .text-stroke {
+            color: green;
+            -webkit-text-stroke: 2px black ;}
+ 
+    @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; } }
+        .animated-text {
+            animation: fadeIn 2s ease-in; }
+    
+    .home {
+        padding: 20px;
+        background-color: lightgreen;
+        border-radius: 20px;
+        margin: 20px ;
+        width: 90%;
+    }
+     p.thick {
+         font-weight: bold;
+}
+    .border-radius-transition {
+            background-color: teal;
+            border-radius: 5px;
+        }
+        .border-radius-transition:hover {
+            border-radius: 50%;
+        }
+    .border-radius-transition {
+            background-color: teal;
+            border-radius: 5px;
+        }
+        .border-radius-transition:hover {
+            border-radius: 50%;
+        }
+    
+    </style>
+</head>
+<head>
+  <div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="#news">Enroll</a>
+  <div class="dropdown">
+    <button class="dropbtn"><p>Strand&nbsp&nbsp<i class="arrow down"></i></p>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">ICT AND EIM</a>
+      <a href="#">STEM</a>
+      <a href="#">HUMS</a>
+      <a href="#">GAS</a>
+    </div>
+  </div> 
+</div>
+ 
+<body bgcolor=#ffffc5>
+
+  <center>
+<table border="10" bordercolor="lightgreen">
+    <tr>
+        <th><img src="pic1.jpg" height="200" width="200">
+        <th background="pic4.jpg"><font style="cursive" size="10" color="yellow"><b><p style="font-family:'Courier New'"><h4 class="text-shadow">STAND ALONE SENIOR HIGH SCHOOL</b></font></th>
+    </tr>
+    <tr>
+    </table>
+        </body>
+          
+          <form action="action_page.php">
+  <div class="container">
+    <font style="cursive" size="15" color="green"><h2 class="text-stroke">-ENROLLMENT FORM-</h2></font>
+    <p><b><font size="5">Please fill in this form For Registration.</p></font>
+
+    <label for="email"><b><font size="6">Email</b></font></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b><font size="6">Name</b></font></label>
+    <input type="password" placeholder="Enter Name" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b><font size="6">Mother's Name</b></font></label>
+    <input type="password" placeholder="Enter Mother's Name" name="psw-repeat" id="psw-repeat" required>
+    
+   <label for="psw-repeat"><b><font size="6">Father's Name</b></font></label>
+    <input type="password" placeholder="Enter Father's Name" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <label for="Strand">Strand</label>
+<select name="Strand" id="Strand">
+  <option value="STRAND">STEM</option>
+  <option value="HUMMS">HUMMS</option>
+  <option value="ICT">ICT</option>
+  <option value="EIM">EIM</option>
+  <option value="GAS">GAS</option>
+</select>
+    <label for="Strand">Grade Level:</label>
+<select name="Strand" id="Strand">
+  <option value="11">11</option>
+  <option value="12">12</option>
+</select>
+      <label for="phone">Contact number:</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    <p>By Submitting the form we will automatically sent to our office for now visit our <a href="#">Events & Activies Page</a>.</p>
+     <button class="button">Submit</button>
+  </div>
+</form>
+<hr size="6" height="100%" width="100%" color="blue">
+                <table border="3" bordercolor="darkviolet">
+                  <font style="cursive" size="15" color="green"><h2 class="text-stroke">-CONTACT DETAILS-</h2></font>
+                  <th><b><font size="6" style="cursive" color="black">ADDRESS:</font></b></th>
+                  <th><font size="6" color="gray">Stand Alone School, G3GG+656, Liwayway Taguig 1637 Metro Manila</font><br></td></th>
+                <tr>
+                  <th><b><font size="6" style="cursive" color="black">EMAIL:</font></b></th>
+                  <th><font size="6" style="cursive" color="gray"><a href="">lancegianapas@gmail.com</a></font></th>
+                </tr>
+                <tr>
+                  <th><font size="6" style="cursive" color="black">Phone:</th></font>
+                  <th><font size="6" style="cursive" color="gray">700-49076</th></font>
+                </tr>
+                    <tr>
+                      <th><font size="6" style="cursive" color="black">OFFICE HOURS:</th>
+                        <th><font size="6" style="cursive" color="gray">Monday-Friday, 8:00AM-5:00PM</th>
+                    </tr>
+                  
+                </table>
+            
+          <table>
+                  <th><img src="end.jpg" width="950" height="400"></th>
+          </table>
+      </body>
+    </html>
+            
